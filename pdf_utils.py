@@ -81,6 +81,7 @@ class MyPDFHandler(object):
         :param bookmarks: 书签元组列表，其中的页码表示的是PDF中的绝对页码，值为1表示第一页
         :return: None
         '''
+        ptlt = None
         for title,page in bookmarks:
             if title[0]!= ' ' and title[0]!='\t':
                 ptlt = self.add_one_bookmark(title,page)
