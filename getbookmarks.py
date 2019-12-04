@@ -32,6 +32,6 @@ def getbookmark(fullfile:str, outfile:str=None):
     return content
 
 # lis = getbookmark('/home/astro/tianti.pdf','./files/tt')
-# lis = getbookmark('./天文地球.pdf','./files/tt')
-# for t,n in lis:
-#     print(t,n)
+lis = getbookmark('/home/astro/物理学中的数学方法-李政道.pdf','./files/tt.txt')
+for t,n in lis:
+    print(t,n)

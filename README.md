@@ -1,4 +1,4 @@
-程序[原作者](https://github.com/dnxbjyj/py-project/tree/master/AddPDFBookmarks)，我对`add_bookmarks`做了修改使其能够讲缩进添加成为二级书签。并增加了`getbookmarks`函数可以导出PDF文件的书签。
+[原作者](https://github.com/dnxbjyj/py-project/tree/master/AddPDFBookmarks)，我对`add_bookmarks`做了修改使其能够讲缩进添加成为二级书签。并增加了`getbookmarks`函数可以导出PDF文件的书签。
 
 # 用Python为PDF文件批量添加书签
 
