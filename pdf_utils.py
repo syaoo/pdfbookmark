@@ -82,10 +82,10 @@ class MyPDFHandler(object):
         :return: None
         '''
         for title,page in bookmarks:
-            if title.find(' ') != 0:
+            if title[0]!= ' ' and title[0]!='\t':
                 ptlt = self.add_one_bookmark(title,page)
             else:
-                self.add_one_bookmark(title.strip(' '),page,parent=ptlt)
+                self.add_one_bookmark(title.lstrip(' \t'),page,parent=ptlt)
 
         print('add_bookmarks success! add {0} pieces of bookmarks to PDF file'.format(len(bookmarks)))
 
