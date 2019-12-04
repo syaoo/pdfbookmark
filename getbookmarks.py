@@ -1,5 +1,5 @@
 from PyPDF2 import PdfFileReader as reader
-def getbookmark(fullfile:str, outfile:str=None):
+def getbookmark(fullfile:str, outfile:str=None)->list:
     '''
     提取PDF文件中的bookmarks，存储到content元组列表中
     :param fullfile：PDF文件路径字符串
@@ -31,7 +31,7 @@ def getbookmark(fullfile:str, outfile:str=None):
         f.close()
     return content
 
-# lis = getbookmark('/home/astro/tianti.pdf','./files/tt')
-lis = getbookmark('/home/astro/物理学中的数学方法-李政道.pdf','./files/tt.txt')
-for t,n in lis:
-    print(t,n)
+# lis = getbookmark('.test.pdf','./files/tt')
+# lis = getbookmark('test.pdf')
+# for t,n in lis:
+#     print(t,n)

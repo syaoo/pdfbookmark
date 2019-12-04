@@ -97,7 +97,7 @@ class MyPDFHandler(object):
         书签标题 页码
         注：中间用空格隔开，页码为1表示第1页
         :param txt_file_path: 书签信息文本文件路径
-        :param page_offset: 页码便宜量，为0或正数，即由于封面、目录等页面的存在，在PDF中实际的绝对页码比在目录中写的页码多出的差值
+        :param page_offset: 页码偏移量，为0或正数，即由于封面、目录等页面的存在，在PDF中实际的绝对页码比在目录中写的页码多出的差值
         :return: 书签列表
         '''
         bookmarks = []
